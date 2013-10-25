@@ -1,0 +1,29 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div id="page">
+    
+    <header class="sidebar">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        <footer>
+            {{widget('signupform', 'signupform', {})|raw}}
+            {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}           
+            {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+        </footer>
+    </header>
+
+    <div class="main">
+        <section>
+            {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
+        </section>
+        <div class="zone wrapper">
+            {{zone('main')|raw}}
+        </div>
+    </div>
+        
+</div>
+
+{% endblock %}
