@@ -1,0 +1,146 @@
+{
+    "name":"Fifty One",
+    "thumbnail":"fiftyone.png",
+    "screenshot":"fiftyone.png",
+    "tags": {
+    "en": ["fullscreen", "dark", "sidebar", "modern", "stylish", "bar", "pub", "nightlife", "food", "professional", "sophisticated", "restaurant", "sans-serif"],
+    "es": ["pantalla completa", "oscuro", "fotografico", "moderno", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
+    "br": ["expandido", "escuro", "fotografia", "moderno", "estilo", "agência", "revista", "criativo", "elegante", "profissional", "sofisticado", "mídia", "sans-serif"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#7a678b",
+            "color3":"#000000",
+            "color4":"#999999",
+            "color5":"#bfbfbf",
+            "color6":"#ffffff",
+            "color7":"#1f1f1f"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#7a678b",
+            "color3":"#000000",
+            "color4":"#999999",
+            "color5":"#bfbfbf",
+            "color6":"#ffffff",
+            "color7":"#464646"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#7a678b",
+            "color3":"#000000",
+            "color4":"#999999",
+            "color5":"#bfbfbf",
+            "color6":"#ffffff",
+            "color7":"#614438"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#7a678b",
+            "color3":"#000000",
+            "color4":"#999999",
+            "color5":"#bfbfbf",
+            "color6":"#ffffff",
+            "color7":"#252b33"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#7a678b",
+            "color3":"#000000",
+            "color4":"#999999",
+            "color5":"#bfbfbf",
+            "color6":"#ffffff",
+            "color7":"#4b3337"
+        }
+    },
+    "fontSwatch": {
+       "title": "Quicksand",
+        "font1": {
+            "font-family": "Quicksand",
+            "font-size": "36px",
+            "font-weight": "50px",
+            "line-height": "44px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Quicksand",
+            "font-size": "32px",
+            "font-weight": "50px",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Quicksand",
+            "font-size": "26px",
+            "font-weight": "50px",
+            "line-height": "38px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Quicksand",
+            "font-size": "20px",
+            "font-weight": "inherit",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Quicksand",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Quicksand",
+            "font-size": "18px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch5",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font7": {
+            "font-family": "Quicksand",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "darken(@color-swatch2,5%)"
+        },
+        "font8": {
+            "font-family": "Quicksand",
+            "font-size": "80px",
+            "font-weight": "400",
+            "line-height": "85px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Quicksand",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "38px",
+            "color": "@color-swatch1",
+            "letter-spacing": "1px"
+        },
+        "font10": {
+            "font-family": "Quicksand",
+            "font-size": "26px",
+            "font-weight": "300",
+            "line-height": "44px",
+            "color": "@color-swatch1",
+            "letter-spacing": "3px"
+        }
+    }
+}
