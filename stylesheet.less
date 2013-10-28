@@ -567,8 +567,8 @@ footer {
   line-height:@font-swatch9-line-height;
   color: @font-swatch9-color;
   letter-spacing: @font-swatch9-letter-spacing;
-  display: inline-block;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom:20px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
@@ -580,18 +580,16 @@ footer {
   background-image: image('/images/button-arrow.png');
   background-position: right center;
   background-repeat: no-repeat;
-  margin: 1em 0em 0em auto;
   padding: 12px 28px 12px 14px;
   border: 0;
   border-right: 1px solid @color-swatch7;
   border-bottom: 1px solid @color-swatch7;
-  box-shadow: 2px 2px 0px rgba(255,255,255,0.2);
   background-color: @font-swatch7-background-color;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
   line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
-  background-color: @font-swatch7-background-color;
+  background-color: lighten(@color-swatch7,40%);
   color: @font-swatch7-color;
   font-size: .9em;
   text-decoration: none;
@@ -602,7 +600,7 @@ footer {
 
 .widget.feature button:hover 
 {
-  background-color: @font-swatch7-background-color-hover;
+  background-color: lighten(@color-swatch7,10%);
   cursor: pointer;
 }
 
@@ -695,9 +693,6 @@ footer {
   letter-spacing: @font-swatch7-letter-spacing;
   color: @font-swatch7-color;
   text-decoration: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
   border:0;
 }
 
@@ -1069,9 +1064,6 @@ hr.line.align-right {
   padding: 0px;
   list-style: none;
   border:1px solid @color-swatch4;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
   background-image: image('/images/twitterlogo.png');
   background-repeat:no-repeat;
   background-position: top 20px center;
@@ -1207,9 +1199,6 @@ hr.line.align-right {
     text-indent: 12px;
     margin-bottom: 30px;
     border: 1px solid @color-swatch7;
-    -webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
 }
 
 .widget.contactform fieldset textarea {
@@ -1225,9 +1214,6 @@ border-radius: 10px;
     margin-top: 6px;
     margin-bottom: 20px;
     resize: none;
-    -webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
 }
 
 .widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
@@ -1265,9 +1251,6 @@ border-radius: 10px;
     font-size: @font-swatch7-font-size;
     text-decoration: none;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
     border:0;
 }
   
@@ -1330,9 +1313,6 @@ border-radius: 10px;
     color: @font-swatch7-color;
     font-size: .9em;
     text-decoration: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .widget.tweet a {
@@ -1375,9 +1355,6 @@ border-radius: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: @color-swatch7;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .widget.socialicons span a:hover, .widget.profile 
@@ -1530,12 +1507,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     text-indent: 10px;
     max-width: 300px;
     border:1px solid @color-swatch3;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-    -moz-border-radius-topleft: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .widget.profile form input:focus {
@@ -1557,12 +1528,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size: @font-swatch7-font-size;
     text-decoration: none;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-    -webkit-border-top-right-radius: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-    -moz-border-radius-topright: 10px;
-    -moz-border-radius-bottomright: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     border:0;
 }
 
@@ -1624,9 +1589,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     text-indent: 10px;
     max-width: 300px;
     border:1px solid @color-swatch3;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
   }
 
 .widget.signupform fieldset input:focus {
@@ -1648,9 +1610,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size: @font-swatch7-font-size;
     text-decoration: none;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
     border:0;
 }
 
