@@ -60,7 +60,7 @@
         "font1": {
             "font-family": "Quicksand",
             "font-size": "36px",
-            "font-weight": "50px",
+            "font-weight": "inherit",
             "line-height": "44px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -68,7 +68,7 @@
         "font2": {
             "font-family": "Quicksand",
             "font-size": "32px",
-            "font-weight": "50px",
+            "font-weight": "inherit",
             "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -76,7 +76,7 @@
         "font3": {
             "font-family": "Quicksand",
             "font-size": "26px",
-            "font-weight": "50px",
+            "font-weight": "inherit",
             "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
