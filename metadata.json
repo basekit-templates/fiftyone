@@ -138,7 +138,7 @@
             "font-family": "Quicksand",
             "font-size": "26px",
             "font-weight": "300",
-            "line-height": "44px",
+            "line-height": "34px",
             "color": "@color-swatch1",
             "letter-spacing": "3px"
         }
