@@ -347,7 +347,7 @@ footer {
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
-  padding: 20px 30px;
+  padding: 10px 30px;
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
@@ -591,10 +591,9 @@ footer {
   letter-spacing: @font-swatch7-letter-spacing;
   background-color: lighten(@color-swatch7,40%);
   color: @font-swatch7-color;
-  font-size: .9em;
+  font-size: @font-swatch7-font-size;
   text-decoration: none;
   text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-  text-transform: uppercase;
   float:left;
 }
 
@@ -1574,7 +1573,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-family:@font-swatch4-font-family;
     font-size:16px;
     font-weight: @font-swatch4-font-weight;
-    color: lighten(@font-swatch5-color,20%);
+    color: @font-swatch4-color;
     line-height:@font-swatch4-line-height;
     letter-spacing: @font-swatch4-letter-spacing;
     text-transform: uppercase;
@@ -1794,8 +1793,24 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
     .sidebar{
       border-right:0;
-      margin-left:-305px;
+      margin-left:-300px;
     }
+
+      /* FEATURE */
+
+  .widget.feature h2 {
+    font-size: bkscale(@font-swatch8-font-size,0.7);
+    line-height: bkscale(@font-swatch8-line-height,0.7);
+  }
+
+  .widget.feature h3 {
+    font-size: bkscale(@font-swatch9-font-size,0.9);
+  }
+
+  .widget.feature button {
+    margin:0px auto;
+    float:none;
+  }
 
 
   /* NAV */
@@ -1813,6 +1828,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     width: 100%;
     position: absolute;
     margin-left:20px;
+    margin-top:5px;
   }
 
     .widget .extendednavigation a.pull:after {
@@ -1965,7 +1981,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 @media only screen and (max-width: 480px) { 
 
 .widget.feature .content .spare{
-  margin-top:40px;
   text-align:center;
 }
 
@@ -2016,8 +2031,8 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   }
 
   .widget.feature h2 {
-    font-size: bkscale(@font-swatch8-font-size,0.7);
-    line-height: bkscale(@font-swatch8-line-height,0.7);
+    font-size: bkscale(@font-swatch8-font-size,0.5);
+    line-height: bkscale(@font-swatch8-line-height,0.5);
   }
 
   .widget.feature h3 {
