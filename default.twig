@@ -2,30 +2,28 @@
 
 {% block content %}
 
-<div class="bk-pt-default">
-
-<header>
-    <div class="wrapper clearfix">
+<div id="page">
+    
+    <header class="sidebar">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    </div>
-</header>
+        <footer>
+            {{widget('companyaddress', 'companyaddress', {})|raw}}
+            {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}           
+            {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+        </footer>
+    </header>
 
-<div class="canvas">
-    <div class="main wrapper clearfix">
-        {{zone('main')|raw}}
+    <div class="main">
+        <section>
+            {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+        </section>
+        <div class="zone wrapper">
+            {{zone('main')|raw}}
+        </div>
     </div>
-</div>
-
-<footer>
-    <div class="wrapper clearfix">
-        {{widget('content', 'footercolumn1content1', {"content":"<p>CONTACTOS</p>"})|raw}}        
-        {{widget('content', 'footercolumn1content2', {"content":"<h2>LOREM IPSUM ALAM YOU?</h2>"})|raw}}       
-        {{widget('profile', 'footercolumn1profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
-        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
-    </div>
-</footer>
-
+        
 </div>
 
 {% endblock %}
