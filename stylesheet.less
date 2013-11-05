@@ -201,7 +201,7 @@ header {
 .widget.companyname {
   border-bottom:1px solid white;
   text-align:center;
-  padding: 0px 0px 20px;
+  padding: 0px 0px 10px;
   margin-left:5px;
   width:232px;
   margin:0px auto;
@@ -225,6 +225,7 @@ header {
 
 .logo {
     padding-top:10px;
+    margin-right:11px;
 }
 
 .widget.logo {
@@ -1824,20 +1825,18 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   .widget .extendednavigation a.pull {
     display: block;
     width: 100%;
-    position: absolute;
-    margin-left:20px;
-    margin-top:5px;
+    margin-bottom:20px;
   }
 
     .widget .extendednavigation a.pull:after {
     content:"";
     background: image('/images/nav-icon.png') no-repeat;
-    width: 30px;
+    background-position: center;
     height: 30px;
+    width:100%;
     display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: -50px;
+    right: 0;
+    top: -48px;
   }
 
     /* NAV */
@@ -1845,7 +1844,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     .widget .extendednavigation ul {
         width: 100%;
         display: none;
-        padding: 20px 0;
+        padding: 20px 0px 0px 0px;
         border-top:1px solid @color-swatch1;
     }
 
@@ -1856,7 +1855,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
     .widget.extendednavigation ul li.folder {
       position: relative;
-      padding: 0px 0px 0px 12px;
       background-image: image('/images/arrow-down.png');
       background-position: right center;
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -2042,6 +2040,11 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     float:none;
   }
 
+  .sidebar{
+    border-right:0;
+    margin-left:-309px;
+  }
+
      /* GALLERY */
     
     .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
@@ -2049,6 +2052,14 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
       font-size:bkscale(@font-swatch5-font-size,0.8);
       line-height:bkscale(@font-swatch5-line-height,0.8);
     }
+
+
+  /* NAV */
+
+
+  .widget.companyname {
+  padding: 0px 0px 5px;
+  }
 
 
     /* SLIDESHOW */
