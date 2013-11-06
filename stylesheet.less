@@ -154,7 +154,8 @@ blockquote:after {
 
 .zone {
     max-width:94%;
-    padding: 20px 30px 0px 30px
+    padding: 20px 30px 0px 30px;
+    margin-left:20px;
   }
 
 
@@ -181,6 +182,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   background-color: lighten(@color-swatch7,15%);
 }
 
+.sidebarwrap{
+  margin-left:10px;
+}
+
 
 /* ===============================
    HEADER
@@ -201,7 +206,7 @@ header {
 .widget.companyname {
   border-bottom:1px solid white;
   text-align:center;
-  padding: 0px 0px 10px;
+  padding: 0px 0px 20px;
   margin-left:5px;
   width:232px;
   margin:0px auto;
@@ -234,7 +239,7 @@ header {
     border-top:1px solid white;
     margin:0px auto;
     margin-top:40px;
-    margin-left:5px;
+    margin-left:4px;
 }
 
 
@@ -243,11 +248,9 @@ header {
    =============================== */
 
 footer {
-  width: 78%;
-  position: absolute;
-  bottom:10px;
   text-align: center;
-  margin-left:5px;
+  margin-top:50px;
+  margin-bottom:20px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
       box-sizing: border-box;         /* Opera/IE 8+ */
@@ -323,6 +326,10 @@ footer {
 
 .widget.extendednavigation ul {
   padding: 0px;
+}
+
+.navdiv{
+  min-height:300px;
 }
 
 /* ALIGNMENTS */
@@ -523,7 +530,7 @@ footer {
    =============================== */
 
  .widget.feature {
-
+  margin-left:20px;
 }
 
 .widget.feature .feature-bgimg {
@@ -1355,6 +1362,9 @@ hr.line.align-right {
     background-repeat: no-repeat;
     background-position: center;
     background-color: @color-swatch7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .widget.socialicons span a:hover, .widget.profile 
@@ -1795,6 +1805,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
       margin-left:-300px;
     }
 
+    .sidebarwrap{
+    margin-left:6px;
+    }
+
       /* FEATURE */
 
   .widget.feature h2 {
@@ -1809,6 +1823,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   .widget.feature button {
     margin:0px auto;
     float:none;
+  }
+
+   .widget.feature {
+    margin-left:0;
   }
 
 
@@ -1844,8 +1862,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     .widget .extendednavigation ul {
         width: 100%;
         display: none;
-        padding: 20px 0px 0px 0px;
-        border-top:1px solid @color-swatch1;
     }
 
     .widget .extendednavigation li {
@@ -1880,15 +1896,13 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
         width: 100%;
         bottom: inherit;
         padding: 0;
-        border-top: 1px solid lighten(@color-swatch7,15%);
     }
 
     .widget.extendednavigation ul li:hover > ul li {
-        padding: 10px 14px;
+        padding: 0px 14px 0px;
     }
 
     .widget.extendednavigation ul li:hover > ul li .text, .widget.extendednavigation ul li:hover > ul li.folder .text {
-        background-image: image('/images/arrow-left-wh.png');
         background-position: left center;
         background-repeat: no-repeat;
     }
@@ -2045,6 +2059,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     margin-left:-309px;
   }
 
+  .widget.feature {
+    margin-left:0;
+  }
+
      /* GALLERY */
     
     .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
@@ -2059,6 +2077,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
   .widget.companyname {
   padding: 0px 0px 5px;
+  }
+
+  .sidebarwrap{
+  margin-left:6px;
   }
 
 
