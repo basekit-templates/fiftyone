@@ -1,4 +1,15 @@
-body {
+/* ===============================
+   IMPORT CSS
+   =============================== */
+
+   @import templatecommon('/paypal.less'); 
+   @import templatecommon('/dropbox.less');
+
+/* ===============================
+   TEMPLATE CSS
+   =============================== */
+
+   body {
   margin: 0;
   padding: 0;
   background-color: @color-swatch1;
@@ -1309,25 +1320,12 @@ hr.line.align-right {
 
 
 .widget.dropbox button {
-  margin: 0;
-  padding: 20px 22px 20px 45px;
-  background-image: image('/images/dropbox-icon.png');
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 19px center;
-  margin: 2.2em auto;
-  border: none;
-  font-family: @font-swatch7-font-family;
-  font-size: @font-swatch7-font-size;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-  cursor: pointer;
+  background-color: lighten(@color-swatch7,40%);
 }
 
 .widget.dropbox button:hover {
-  background-color: @font-swatch7-background-color-hover;
+  background-color: lighten(@color-swatch7,10%);
+  cursor: pointer;
 }
 
 /* ===============================
