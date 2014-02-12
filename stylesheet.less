@@ -47,6 +47,9 @@ h2
   line-height:@font-swatch2-line-height;
   color:@font-swatch2-color;
   letter-spacing: @font-swatch2-letter-spacing;
+  a {
+    font-size: @font-swatch2-font-size;	  
+  }
 }
 
 h3
@@ -171,6 +174,7 @@ blockquote:after {
     border-bottom: 1px solid @color-swatch7;
     margin: 20px 0px;
     padding:20px 0px;
+    float: left;
   }
 
 
@@ -1730,6 +1734,12 @@ hr.line.align-right {
 	height: 41px;
 }
 
+.widget .extendednavigation a.pull {
+  position: absolute;
+  right: 10px;
+  width: 50px;
+}
+
 /* ===============================
    IPAD WIDTH
    =============================== */
@@ -1785,7 +1795,6 @@ hr.line.align-right {
 
     .sidebar{
       border-right:0;
-      margin-left:-300px;
     }
 
     .sidebarwrap{
@@ -1825,7 +1834,6 @@ hr.line.align-right {
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 100%;
     margin-bottom:20px;
   }
 
@@ -2039,7 +2047,6 @@ hr.line.align-right {
 
   .sidebar{
     border-right:0;
-    margin-left:-309px;
   }
 
   .widget.feature {
