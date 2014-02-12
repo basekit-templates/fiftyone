@@ -4,12 +4,12 @@
 
 <div id="page">
     
-    <header class="sidebar">
+    <header class="bk-header sidebar">
         <div class="sidebarwrap">
         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
-        <footer>
+        <footer class="bk-footer">
             <div class="addressicons">
                 {{widget('profile', 'footercolumn1profileaddress', { 'profileType':'address', 'address':'profile'})|raw}} 
                 {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
@@ -20,7 +20,7 @@
     </header>
 
     <div class="main">
-        <section>
+        <section class="bk-section">
             {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
         </section>
         <div class="zone wrapper">

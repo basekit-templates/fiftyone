@@ -4,11 +4,11 @@
 
 <div id="page">
     
-    <header class="sidebar">
+    <header class="bk-header sidebar">
         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
-        <footer>
+        <footer class="bk-footer">
             {{widget('profile', 'footercolumn1profileaddress', { 'profileType':'address', 'address':'profile'})|raw}} 
             {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}           
             {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}

@@ -191,7 +191,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEAFULT PAGE TYPES */
 
-.bk-pt-default header {
+.bk-pt-default .bk-header {
   position: relative;
   background-color: lighten(@color-swatch7,15%);
 }
@@ -246,7 +246,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    FOOTER
    =============================== */
 
-footer {
+.bk-footer {
+  clear: both;
   text-align: center;
   margin-top:50px;
   margin-bottom:20px;
@@ -340,7 +341,6 @@ footer {
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
-  color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
   letter-spacing: @font-swatch6-letter-spacing;
 }
@@ -354,10 +354,10 @@ footer {
 /* FOLDER */
 
 .widget.extendednavigation ul li.folder {
-  background-image: image('/images/nav-arrow.png');
-  background-position: right 21px;
-  background-repeat: no-repeat;
   cursor: pointer;
+  li .text {
+	    color: @color-swatch3;
+  }
 }     
 
 .widget.extendednavigation ul li.folder:hover {
@@ -382,7 +382,7 @@ footer {
 .widget.extendednavigation li:hover > ul li {
   display: block;
   width: 100%;
-  padding: 0 32px 0;
+  padding: 0 6px 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
@@ -435,13 +435,12 @@ footer {
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
-  color: @font-swatch4-color;
   line-height:@font-swatch6-line-height;
   letter-spacing: @font-swatch6-letter-spacing;
 }
 
 .main .widget.extendednavigation ul li a:hover, .main .widget.extendednavigation ul li.folder .text:hover {
-  color: lighten(@font-swatch4-color,10%);
+  color: lighten(@font-swatch4-color, 50%);
   text-decoration: none;
 }
 
@@ -554,21 +553,19 @@ footer {
   letter-spacing: @font-swatch9-letter-spacing;
   margin-top: 20px;
   margin-bottom:20px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 
 /* FEATURE BUTTON */
 
-.widget.feature button
+.widget.feature button, .widget.feature .feature-bgimg .content button
 {
   display: block;
   background-image: image('/images/button-arrow.png');
-  background-position: right center;
+  background-position: right 6px center;
   background-repeat: no-repeat;
-  padding: 12px 28px 12px 14px;
+  padding: 8px 30px 9px 19px;
   border: 0;
-  border-right: 1px solid @color-swatch7;
-  border-bottom: 1px solid @color-swatch7;
   background-color: @font-swatch7-background-color;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
@@ -785,7 +782,6 @@ footer {
     font-weight: @font-swatch4-font-weight;
     font-size: @font-swatch4-font-size;
     text-align: center;
-    text-transform: uppercase;
     line-height: @font-swatch4-line-height;
 }
 
@@ -1059,7 +1055,6 @@ hr.line.align-right {
   font-family: @font-swatch4-font-family;
   color: @color-swatch5;
   font-size: 11px;
-  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
 }
@@ -1204,16 +1199,16 @@ hr.line.align-right {
 /* PLACEHOLDER CSS */
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    lighten(@color-swatch5,10%);
+    color: darken(@color-swatch1,30%);
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    lighten(@color-swatch5,10%);
+    color: darken(@color-swatch1,30%);
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    lighten(@color-swatch5,10%);
+    color: darken(@color-swatch1,30%);
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    lighten(@color-swatch5,10%);
+    color: darken(@color-swatch1,30%);
 }
 
 
@@ -1273,17 +1268,17 @@ hr.line.align-right {
 }
 
 /* ===============================
-   DROPBOX BUTTON
+   BUTTON COLOURS
    =============================== */
 
 
-.widget.dropbox button {
+.widget.dropbox button, .widget.paypalbuynow .widget.button.paypal, .widget.tweet a, .blog-search-submit-button {
   background-color: lighten(@color-swatch7,40%);
-}
-
-.widget.dropbox button:hover {
-  background-color: lighten(@color-swatch7,10%);
   cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  &:hover {
+  	background-color: lighten(@color-swatch7,10%);
+  }
 }
 
 /* ===============================
@@ -1299,21 +1294,18 @@ hr.line.align-right {
 }
 
 .svg .widget.tweet a {
-    background-image: image('/images/social/twitter.png');
+    //background-image: image('/images/social/twitter.png');
     background-repeat: no-repeat;
-    padding: 19px 14px 15px 63px;
+    //padding: 19px 14px 15px 63px;
     font-family: @font-swatch7-font-family;
     font-weight:@font-swatch7-font-weight;
     color: @font-swatch7-color;
     font-size: .9em;
     text-decoration: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .widget.tweet a {
-    background-image: image('/images/social/socialicons-twitter.png');
+    //background-image: image('/images/social/socialicons-twitter.png');
 }
 
 .widget.tweet a:hover {
@@ -1351,9 +1343,6 @@ hr.line.align-right {
     background-repeat: no-repeat;
     background-position: center;
     background-color: @color-swatch7;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .widget.socialicons span a:hover, .widget.profile 
@@ -1447,7 +1436,7 @@ hr.line.align-right {
 
 /* FOOTER PROFILE - SOCIAL */
 
-footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicons span a {
+.bk-footer .widget.socialicons span a, .bk-footer .widget.profile .bk-profile-socialicons span a {
     border: 0;
     border-right: 1px solid @color-swatch7;
     border-bottom: 1px solid @color-swatch7;
@@ -1512,7 +1501,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   outline: none;
 }
 
-.widget.profile form button {
+.widget.profile form button, .blog-search-submit-button {
     background-image: image('/images/button-arrow.png');
     background-position: right center;
     background-repeat: no-repeat;
@@ -1701,7 +1690,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 {
     background: image('/images/slideshow-play.png') center no-repeat;
     background-size: 100%;
-    border-radius:10px;
     font-size:0;
     text-indent: -99999px;
 }
@@ -1734,7 +1722,13 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     cursor: pointer;
 }
 
-
+.widget.responsiveslideshow .btn-play:after {
+	display: none;
+}
+.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
+    width: 41px;
+	height: 41px;
+}
 
 /* ===============================
    IPAD WIDTH
@@ -1755,11 +1749,11 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
         margin-top:0px;
     }
 
-    footer {
+    .bk-footer {
         display: none;
     }
 
-    header{
+    .bk-header{
         padding:0;
         width:100%;
     }
@@ -2128,7 +2122,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size: @font-swatch3-font-size;
     text-decoration: none;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-    text-transform: uppercase;
   }
     
   .widget.clicktocall a:hover {
@@ -2170,10 +2163,51 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
 }
 
-@media only screen and (min-width: 1140px) {
-  .wrapper {
-    width: 100%;
-  }
+// INPUT FIELDS (overwrites inconsistent colours)
+input[type=email], input[type=search], .widget.profile form input, .widget.signupform fieldset input, .widget.profile form fieldset input {
+	background-color: darken(@color-swatch1, 10%);
+	border: 0;
+	height: 40px;
+	::-webkit-input-placeholder { /* WebKit browsers */
+    	color: darken(@color-swatch1,30%);
+    	-webkit-transition: .2s;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color: darken(@color-swatch1,30%);
+    	-moz-transition: .2s;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: darken(@color-swatch1,30%);
+    	-moz-transition: .2s;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color: darken(@color-swatch1,30%);
+    	-ms-transition: .2s;
+	}
+	&:focus {
+		::-webkit-input-placeholder { /* WebKit browsers */
+	    	opacity: 0;
+	    	background-color: darken(@color-swatch1, 10%);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    opacity: 0;
+		    background-color: darken(@color-swatch1, 10%);
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    opacity: 0;
+		    background-color: darken(@color-swatch1, 10%);
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		    opacity: 0;
+		    background-color: darken(@color-swatch1, 10%);
+		}
+	}
+}
+
+.widget.profile form button, .widget.signupform button {
+	padding: 3px 21px 3px 14px;
+	line-height: 34px;
+	margin-left: 0;
 }
 
 .clearfix:before,
