@@ -1,21 +1,17 @@
 /* ===============================
    IMPORT CSS
    =============================== */
-
-  @import "@{templateCommon}/paypal.less";
-  @import "@{templateCommon}/dropbox.less";
+  @import "@{templateCommon}/basekit-bootstrap.less";
 
 /* ===============================
    TEMPLATE CSS
    =============================== */
 
-   body {
+body {
   margin: 0;
   padding: 0;
   background-color: @color-swatch1;
-}
-
-.wrapper {
+  font-family:@font-swatch1-font-family;
 }
 
 a {
@@ -141,13 +137,11 @@ blockquote:after {
 
 .sidebar { 
     float: left;
-    left: 300px;
-    margin-left: -305px;
-    min-width: 330px;
+    width: 30%;
     height: 100%;
     overflow-y: auto;
     position: fixed;
-    padding: 0 40px;
+    padding: 0 20px;
     background-color: @color-swatch7;
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;   
@@ -159,8 +153,11 @@ blockquote:after {
 /* MAIN CONTENT AREA */
 
 .main {
-    margin-left: 325px;
+	width: 70%;
+	float: left;
+	margin-left: 30%;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .zone {
@@ -169,7 +166,7 @@ blockquote:after {
     margin-left:20px;
   }
 
-  .zonecontainer{
+.zonecontainer{
     border-top: 1px solid @color-swatch7;
     border-bottom: 1px solid @color-swatch7;
     margin: 20px 0px;
@@ -194,24 +191,14 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEAFULT PAGE TYPES */
 
-
 .bk-pt-default header {
   position: relative;
   background-color: lighten(@color-swatch7,15%);
 }
 
-.sidebarwrap{
-  margin-left:10px;
-}
-
-
 /* ===============================
    HEADER
    =============================== */
-
-header {
-  
-}
 
 .companyheader {
   display: block;
@@ -225,9 +212,6 @@ header {
   border-bottom:1px solid white;
   text-align:center;
   padding: 0px 0px 20px;
-  margin-left:5px;
-  width:232px;
-  margin:0px auto;
 }
 
 .widget.companyname a {
@@ -248,16 +232,13 @@ header {
 
 .logo {
     padding-top:10px;
-    margin-right:11px;
 }
 
 .widget.logo {
     width:100%;
     text-align:center;
     border-top:1px solid white;
-    margin:0px auto;
     margin-top:40px;
-    margin-left:4px;
 }
 
 
@@ -285,9 +266,6 @@ footer {
    STANDARD NAVIGATION
    =============================== */
 
-.widget.navigation {
-}
-
 .widget.navigation ul {
   padding: 0;
   margin: 20px 0 0;
@@ -296,11 +274,6 @@ footer {
 .widget.navigation ul.align-center li
 {
   text-align: center;
-}
-
-.widget.navigation ul.align-left li
-{
-  text-align: left;
 }
 
 .widget.navigation ul.align-right li
@@ -352,18 +325,8 @@ footer {
 
 /* ALIGNMENTS */
 
-.widget.extendednavigation ul.align-center li, .widget.extendednavigation ul.align-center li:hover ul li {
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-left li, .widget.extendednavigation ul.align-left li:hover ul li
-{
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
-{
-  text-align: right;
+.widget.extendednavigation {
+	text-align: center;
 }
 
 .widget.extendednavigation ul li {
@@ -373,7 +336,7 @@ footer {
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
-  padding: 10px 30px;
+  padding: 10px 15px;
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
@@ -546,10 +509,6 @@ footer {
 /* ===============================
    FEATURE
    =============================== */
-
- .widget.feature {
-  margin-left:20px;
-}
 
 .widget.feature .feature-bgimg {
   height: 900px;
