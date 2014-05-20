@@ -2,6 +2,7 @@
     "name":"Fifty One",
     "thumbnail":"fiftyone.png",
     "screenshot":"fiftyone.png",
+    "templateType":"standard",
     "tags": {
     "en": ["fullscreen", "dark", "sidebar", "modern", "stylish", "bar", "pub", "nightlife", "food", "professional", "sophisticated", "restaurant", "sans-serif"],
     "es": ["pantalla completa", "oscuro", "fotografico", "moderno", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
